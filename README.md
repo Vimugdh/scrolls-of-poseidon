@@ -15,7 +15,7 @@ For each source, we fetch the document metadata first. Then we make a request fo
 6. **IPCC Reports** - no API access here. The files need to be manually downloaded/programmatically scraped but the volume is very less here so either is fine.
 7. **NASA** - provides API access to all it's research data at 1000 requests per hour on a rolling basis. It has very high quality data on observing Earth's oceans. I'll pull the relevant literature only.
 8. **NOAA Repository** - no API access here. The reports all need to be scraped in a *polite* manner. It has very high quality reports on basically everything related to oceans and marine life.
-9. 
+9. **UNESCO AquaDocs** - provides API access via the OAI-PMH Protocol. We need to extract the metadata and then individually download papers of interest. There is no API key required and it seems to be designed for a process called `harvesting` where we sequentially extract batches of records one after the other. We will be *polite* here too, making 1 request at a time with 1-2 second gap between each request. 
 10. 
 
 Other sources that I will use but I will not include in the mined open-source corpus:
